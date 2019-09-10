@@ -1,0 +1,15 @@
+The GNU Project
+    uname -o (returns GNU/Linux)
+    tar -xJF coreutils-8.28.tar.xz  
+    sudo apt-get install gcc
+    bash configure
+    sudo apt install make
+    make (inside the coreutils directory)
+    sudo make install
+
+
+
+sudo apt-get upgrade
+sudo apt-get install
+sudo apt-get update
+

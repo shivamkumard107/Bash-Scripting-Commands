@@ -1,0 +1,21 @@
+bash scripting part 1
+
+shebang in linux - to start bash scripts with it to tell terminal to interpret the bash shell
+#!/bin/bash 
+
+mkdir ~/Desktop/magic
+cd ~/Desktop/magic
+touch file{1..100}
+ls -lh ~/Desktop > ~/Desktop/magic.log
+
+bash scripting part 2
+
+#!/bin/bash
+tar -cvzf bashup.tar.gz ~/{Documents, Downloads, Desktop, Pictures, Videos} (create zipped backup for the specified things)
+
+chmod +x bashscript.sh (to give executable privilages to script)
+
+
+CRONTAB
+crontab -e
+https://crontab.guru/

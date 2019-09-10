@@ -1,0 +1,58 @@
+The File System Commands
+Basic
+    pwd (present working directory)
+    ls -lh (-h means human readable)
+
+Navigating the file system
+    cd ~/Desktop/FileSystem
+    cd . (refers to the folder we're in)
+    cd .. (one step back up the directory)
+
+File Extension in Linux
+    file tux.png (give info about file, type, size)
+
+
+WILDCARDS
+    ls Documents/ Desktop/ Pictures/ (list all the files folder inside all three seperatly)
+    ls * (* matches anything. so it take every folder and file and display all things inside every folder)
+    ls D* (having name D and then anything ex. Desktop, Documents)
+    ls *.txt
+    ls ?.txt (show every file having only one text before .txt) ) (? allows only one character)
+    ls ???.txt (results may be con.txt, all.txt not to.txt or toto.txt)
+    ls file[1234567].txt (returns all files having name like file1.txt file7.txt file4.txt)
+    ls file?.txt
+    ls file*.txt
+    ls file[0-9].txt
+    ls file[A-B].txt
+    ls file[a-b].txt
+    rm file*.txt
+    ls file[0-9][A-B].txt
+
+Creating Files and Folders
+    mkdir birthday/
+    mkdir "birthday and deathday"
+    touch makefile.txt
+    mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2019,2020,2021} (every month concatenated with every every written and a folder is created)
+    mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2019..2021} (same as above)
+    touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2019..2021}/file{1..100}.txt
+
+Delele files and folders 
+    man rm
+    rm files.txt file2.txt (to delete files folders)
+    rm -r nonEmptyFolder.txt (to delete folder containing files and folders, recursively deleting them)
+    rm *.txt (delete all txt files)
+    rm *2* (delete everything having 2 in name)
+    rmdir deleteMe/ (delete folder if empty)
+
+Copy, Move
+    cp destination/* .. (copy everything inside destination and paste it by going one step up the directory)
+    cp -r copyme/ destination/
+    mv destination/ renamedDest/ 
+    mv ../Desktop Pictures/
+
+
+Locate files folders
+    locate *.conf
+    locate -i --limit 3 *.conf
+    locate -S (information about the file system database and where it is located)
+    
