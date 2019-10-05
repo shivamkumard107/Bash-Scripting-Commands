@@ -1,15 +1,24 @@
 The GNU Project
+> Returns the name of the Operating System/ Kernel
     uname -o (returns GNU/Linux)
-    tar -xJF coreutils-8.28.tar.xz  
+
+> Used to compress file folders (here the folder name coreutils-8.28.tar.xz to be compressed)
+    tar -xJF coreutils-8.28.tar.xz
+
+> install the software gcc in from apt
     sudo apt-get install gcc
+
+> make a configure file
     bash configure
+
+> install the changes made by you in coreutils
     sudo apt install make
     make (inside the coreutils directory)
     sudo make install
 
-
-
+> upgrade the current version of software you're using in ubuntu
 sudo apt-get upgrade
-sudo apt-get install
-sudo apt-get update
+
+> update the current version of software
+sudo apt-get install update
 
