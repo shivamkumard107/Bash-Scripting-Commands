@@ -8,8 +8,14 @@ The GNU Project
     sudo make install
 
 
-
+# For retrieving the list of packages that can be updated
 sudo apt-get upgrade
-sudo apt-get install
+
+# Then update the packages that have upgrades
 sudo apt-get update
+
+# To install a third-party package
+sudo apt-get install <package-name>
+
+#Example: sudo apt-get install vlc
 
